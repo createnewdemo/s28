@@ -121,8 +121,20 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-#短信模板
-SMS = 0
+#####  短信配置  ####
+#腾讯云短信应用的 app_id
+TENCENT_SMS_APP_ID = 6666
+# 腾讯云短信应用的app_key
+TENCENT_SMS_APP_KEY = "66666"
+#腾讯云短信签名内容
+TENCENT_SMS_SIGN = "DemoLi"
+
+
+TENCENT_SMS_TEMPLATE = {
+    'register':590049,
+    'login':590050,
+}
+
 
 
 try:
